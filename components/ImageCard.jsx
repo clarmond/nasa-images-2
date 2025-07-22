@@ -1,11 +1,13 @@
+import Link from "next/link";
+
 const ImageCard = (props) => {
-    const { altText, href, imageURL, title } = props.image;
+    const { altText, href, imagePreview, title } = props.image;
     return (
         <div className="image-card">
             <div>
-                <a href={href} target="_blank" rel="noreferrer">
-                    <img src={imageURL} className="image" alt={altText} />
-                </a>
+                <Link href={href} target="_blank" rel="noreferrer">
+                    <img src={imagePreview.href} className="image" alt={altText} />
+                </Link>
                 <div className="image-title">
                     {title}
                 </div>
