@@ -11,12 +11,12 @@ export default async function Home() {
   const images = results.collection.items.map((item) => {
     const { data, links } = item;
     const { description_508: altText, description, nasa_id: nasaID, title: titleRaw } = data[0];
-    const imagePreview = links[1];
+    const imagePreview = links[0];
     const title = titleRaw.replace('Apollo_11_moonwalk_montage_720p', 'Apollo 11 Moonwalk Montage');
     return {
-      altText,
+      altText: altText || `NASA Image ${nasaID}`,
       description,
-      href: `https://images.nasa.gov/details/${nasaID}`,
+      linkToDetails: `https://images.nasa.gov/details/${nasaID}`,
       imagePreview,
       nasaID,
       title,
