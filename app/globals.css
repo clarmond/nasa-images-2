@@ -5,44 +5,48 @@ body {
   padding: 5px;
 }
 
-.image-grid {
-    box-sizing: border-box;
-    margin: 10px;
-    padding: 5px;
+h1 {
+  color: white;
+  text-align: center;
+}
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 200px);
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
-    justify-content: center;
+.image-grid {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  justify-content: center;
+  margin: 10px;
+  padding: 5px;
 }
 
 .image-card {
-    background: linear-gradient(to bottom, #666, #333);
-    border-radius: 8px;
-    box-sizing: border-box;
-    filter: drop-shadow(5px 5px 5px);
-    padding: 10px 5px;
-    text-align: center;
-    transform: translateZ(0);
-    transition: transform 0.1s ease-out;
+  background: linear-gradient(to bottom, #666, #333);
+  border-radius: 8px;
+  box-sizing: border-box;
+  filter: drop-shadow(5px 5px 5px);
+  padding: 10px 5px;
+  text-align: center;
+  transform: translateZ(0);
+  transition: transform 0.1s ease-out;
 }
 .image-card:hover {
-    background: linear-gradient(to bottom, #888, #444);
-    transform: scale(1.1);
-    z-index: 2;
+  background: linear-gradient(to bottom, #888, #444);
+  transform: scale(1.1);
+  z-index: 2;
 }
 .image-card .image-title {
-    color: white;
-    font-size: 11pt;
-    font-weight: bold;
-    padding: 4px;
-    text-align: center;
+  color: white;
+  font-size: 11pt;
+  font-weight: bold;
+  padding: 4px;
+  text-align: center;
 }
 .image-card .image {
-    border: 2px solid #aaa;
-    border-radius: 50%;
-    height: 180px;
-    object-fit: cover;
-    width: 180px;
+  border: 2px solid #aaa;
+  border-radius: 50%;
+  height: 125px;
+  object-fit: cover;
+  width: 125px;
 }
