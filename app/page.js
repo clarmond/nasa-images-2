@@ -1,6 +1,9 @@
 import ImageGrid from "@/components/ImageGrid";
 
-import styles from "./page.module.css";
+export const metadata = {
+  title: 'Popular NASA Images',
+  description: 'A sample Next.js app that displays popular NASA images',
+};
 
 export default async function Home() {
   const resp = await fetch('https://images-assets.nasa.gov/popular.json');
